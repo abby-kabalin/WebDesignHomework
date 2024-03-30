@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.main-container {
+    padding: 10px;
+    background: black;
+    margin: auto;
+}
+
+div.align {
+    text-align: center;
+}
+
+.secondary-container {
+    margin: auto;
+    width: 80%;
+    padding: 50px;
+    background: white;
+    opacity: 80%;
+}
+
+#mainheader {
+    position: relative;
+    left: 20px;
+    top: 5px;
+    color: limegreen;
+    font-size: 50px;
+}
+
+#mainheader:hover {
+    color: limegreen;
+    opacity: .75;
+}
+
+#subheader {
+    position: relative;
+    left: 20px;
+    top: 5px;
+    color: limegreen;
+    opacity: .75;
+    font-size: 20px;
+}
+
+#subheader:hover {
+    color: limegreen;
+    opacity: .75;
+}
+
+#subsubheader {
+    position: relative;
+    left: 20px;
+    top: 5px;
+    color: limegreen;
+    opacity: .75;
+    font-size: 15px;
+}
+
+#subsubheader:hover {
+    color: limegreen;
+    opacity: .75;
+}
