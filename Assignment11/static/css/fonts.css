@@ -1,0 +1,14 @@
+/* title font */
+@font-face {
+    font-family: 'Inception';
+    src: url('../fonts/Inception_free.ttf') format('truetype');
+    font-style: 'normal';
+}
+
+
+/* normal page font */
+@font-face {
+    font-family: 'Conthrax';
+    src: url('../fonts/conthrax-sb.otf') format('truetype');
+    font-style: 'normal';
+}

@@ -1,0 +1,172 @@
+:root {
+    --main-bg-color: #606086;
+    --main-text-color: #02019B;
+    --secondary-bg-color: #212194;
+    --main-link-color: #41408D;
+    --main-link-hover-color: #707083;
+    --main-text-shadow-color: #50508A;
+    --main-font-family: 'Conthrax';
+    --title-font-family: 'Inception';
+}
+
+h1 {
+    font-family: var(--title-font-family);
+    font-size: 80px;
+    color: var(--main-text-color);
+    background-color: var(--main-bg-color);
+    height: 80px;
+    text-align: center;
+}
+
+h2 {
+    font-family: var(--main-font-family);
+    font-size: 20px;
+    color: var(--main-text-color);
+    height: 40px;
+    text-align: left;
+}
+
+h3 {
+    font-family: var(--main-font-family);
+    font-size: 15px;
+    color: var(--secondary-text-color);
+    height: 30px;
+    text-align: left;
+}
+
+a {
+    font-family: var(--main-font-family);
+    font-size: 20px;
+    color: var(--main-link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--main-link-hover-color);
+}
+
+ul {
+    font-family: var(--main-font-family);
+    font-size: 20px;
+    color: var(--main-text-color);
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px;
+}
+
+figcaption {
+    font-family: var(--main-font-family);
+    font-size: 15px;
+    color: var(--main-text-color);
+    text-align: center;
+}
+
+
+
+
+
+div {
+    text-align: left;
+    font-family: var(--main-font-family);
+    font-style: normal;
+    margin: 5px;
+
+}
+
+.title {
+    font-family: var(--title-font-family);
+    font-size: 80px;
+    color: var(--main-text-color);
+    background-color: var(--main-bg-color);
+    height: 100px;
+    text-align: center;
+}
+
+.info {
+    font-family: var(--main-font-family);
+    font-size: 5px;
+    size: fit-content;
+    color: var(--main-text-color);
+    text-shadow: var(--main-text-shadow-color);
+    height: 80px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.row1 {
+    display: flex;
+    grid-area: row1;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 3px solid var(--main-bg-color);
+}
+
+.row2 {
+    display: flex;
+    grid-area: row2;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 10px;
+    padding: auto;
+    margin-bottom: 10px;
+
+}
+
+.container {
+    display: grid;
+    grid:
+        ". row1 row1"
+        "row2 row2 row2"
+        ". . .";
+    size: fit-content;
+    justify-content: space-around;
+    align-items: left;
+    margin: 10px;
+    padding: 10px 10px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    size: fit-content;
+    justify-content: space-around;
+    align-items: left;
+    margin: 10px;
+    padding: 10px 10px;
+    border: 3px solid var(--main-bg-color);
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    justify-content: space-around;
+    align-items: left;
+    margin: 10px;
+    padding: 10px 10px;
+    border: 3px solid var(--main-bg-color);
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 66%;
+    justify-content: space-around;
+    align-items: left;
+    margin: 10px;
+    padding: 10px 10px;
+    border: 3px solid var(--main-bg-color);
+}
+
+/*img {
+    padding: 5px 15px;
+}*/
