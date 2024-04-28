@@ -1,0 +1,192 @@
+:root {
+    --primary-color: #ff0000;
+    --secondary-color: #ff3333;
+    --tertiary-color: #ff6666;
+    --quaternary-color: #ff9999;
+    --pastel-color-1: #ffb3ba;
+    --pastel-color-2: #ffdfba;
+    --pastel-color-3: #ffffba;
+    --pastel-color-4: #baffc9;
+    --main-font-family: 'Fallout';
+    --title-font-family: 'Sole Survivor';
+}
+
+/* Body */
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+    margin: 50px;
+    font: var(--title-font-family);
+}
+
+h2 {
+    color: var(--secondary-color);
+    text-align: center;
+    margin: 30px;
+    font: var(--main-font-family);
+}
+
+h3 {
+    color: var(--tertiary-color);
+    text-align: center;
+    margin: 20px;
+    font: "Overseer";
+}
+
+p {
+    color: var(--secondary-color);
+    text-align: center;
+    margin: 20px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--pastel-color-2);
+    list-style-type: none;
+}
+
+a {
+    color: var(--tertiary-color);
+    text-decoration: none;
+
+}
+
+
+/* Navigation bar */
+.nav {
+    background-color: var(--pastel-color-2);
+    overflow: hidden;
+}
+
+.nav-title {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--primary-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    font: var(--title-font-family);
+}
+
+/* Style the links inside the navigation bar */
+.nav a {
+    float: left;
+    color: var(--tertiary-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.nav a:hover,
+.dropdown:hover .dropbtn {
+    color: var(--secondary-color);
+}
+
+/* Add a color to the active/current link */
+.nav a.active {
+    color: var(--pastel-color-4);
+}
+
+
+/* Sizing */
+.container {
+    display: flex;
+    position: relative;
+    background-color: var(--pastel-color-1);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 3px var(--tertiary-color);
+    margin: 10px;
+    padding: 10px;
+}
+
+/* Dropdown */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: var(--tertiary-color);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    /* Important for vertical align on mobile phones */
+    margin: 0;
+    /* Important for vertical align on mobile phones */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--pastel-color-2);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown a.active {
+    color: var(--pastel-color-4);
+    transition: background-color 0.3s ease;
+}
+
+/* Card */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 300px;
+    background-color: var(--pastel-color-3);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.card img {
+    width: auto;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    font-size: 18px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: var(--secondary-color);
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    display: inline-flex;
+    max-width: 50%;
+    padding: 0 4px;
+}
